@@ -103,8 +103,10 @@ Host: example.com
 GET /GetUser/dmljdGltQG1haWwuY29t HTTP/1.1
 Host: example.com
 ...
-```
+
 dmljdGltQG1haWwuY29t => victim@mail.com
+
+```
 
 - [ ] If the website using GraphQL, try to find IDOR using GraphQL.
 ```
