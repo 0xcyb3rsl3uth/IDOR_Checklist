@@ -46,19 +46,13 @@ Host: example.com
 
 - [ ] Test on outdated API Versions
 
-POST /v2/GetData HTTP/1.1
-Host: example.com
-...
 
-id=123
 
-Try this to bypass
+| Initial Request     | Bypass Request |
+|---------------------|----------------|
+| POST /v1/GetData HTTP/1.1<br>Host: example.com<br>id=123 | POST /v2/GetData HTTP/1.1<br>Host: example.com<br>id=123 |
 
-POST /v1/GetData HTTP/1.1
-Host: example.com
-...
 
-id=123
 
 
 - [ ] Wrap the ID with an array.
